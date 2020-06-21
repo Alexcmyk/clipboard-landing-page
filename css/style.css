@@ -168,6 +168,7 @@ button {
   border-bottom: 5px solid #1c9e8a;
   -webkit-box-shadow: 0px 9px 20px rgba(38, 186, 164, 0.5);
           box-shadow: 0px 9px 20px rgba(38, 186, 164, 0.5);
+  cursor: pointer;
 }
 
 header {
@@ -195,7 +196,7 @@ header .hero {
 }
 
 header .hero img {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 header .hero h1 {
