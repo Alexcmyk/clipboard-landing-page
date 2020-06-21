@@ -3,14 +3,12 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 
-  .hero {
+  div.hero {
     max-width: 800px;
     padding: 40px;
 
@@ -25,11 +23,6 @@ header {
       font-weight: 600;
     }
 
-    p {
-      margin-top: 30px;
-      line-height: 1.5;
-    }
-
     button {
       margin-top: 30px;
     }
@@ -37,6 +30,10 @@ header {
       background-color: $secondary-color;
       border-bottom: 5px solid #5964be;
       box-shadow: 0px 9px 20px hsla(233, 100%, 69%, 0.5);
+    }
+
+    button.blue:hover {
+      box-shadow: 0px 3px 7px hsla(233, 100%, 69%, 0.5);
     }
   }
 }

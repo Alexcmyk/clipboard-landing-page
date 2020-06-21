@@ -155,6 +155,40 @@ body {
   color: #9fabb2;
 }
 
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h2 {
+  font-size: 32px;
+  color: #4c545d;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #4c545d;
+}
+
+h1 + p,
+h2 + p {
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
 button {
   outline: none;
   padding: 17px 40px;
@@ -169,6 +203,15 @@ button {
   -webkit-box-shadow: 0px 9px 20px rgba(38, 186, 164, 0.5);
           box-shadow: 0px 9px 20px rgba(38, 186, 164, 0.5);
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0px 3px 7px rgba(38, 186, 164, 0.5);
+          box-shadow: 0px 3px 7px rgba(38, 186, 164, 0.5);
 }
 
 header {
@@ -176,7 +219,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,35 +232,74 @@ header {
           align-items: center;
 }
 
-header .hero {
+header div.hero {
   max-width: 800px;
   padding: 40px;
 }
 
-header .hero img {
+header div.hero img {
   margin-top: 100px;
 }
 
-header .hero h1 {
+header div.hero h1 {
   margin-top: 120px;
   font-size: 45px;
   color: #4c545d;
   font-weight: 600;
 }
 
-header .hero p {
-  margin-top: 30px;
-  line-height: 1.5;
-}
-
-header .hero button {
+header div.hero button {
   margin-top: 30px;
 }
 
-header .hero button.blue {
+header div.hero button.blue {
   background-color: #6173ff;
   border-bottom: 5px solid #5964be;
   -webkit-box-shadow: 0px 9px 20px rgba(97, 115, 255, 0.5);
           box-shadow: 0px 9px 20px rgba(97, 115, 255, 0.5);
+}
+
+header div.hero button.blue:hover {
+  -webkit-box-shadow: 0px 3px 7px rgba(97, 115, 255, 0.5);
+          box-shadow: 0px 3px 7px rgba(97, 115, 255, 0.5);
+}
+
+section.keep-track div.text {
+  text-align: center;
+  max-width: 800px;
+  margin-top: 100px;
+}
+
+section.keep-track div.content {
+  width: 100%;
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.keep-track div.content div.content__image {
+  margin-left: -50px;
+}
+
+section.keep-track div.content div.content__text {
+  max-width: 450px;
+  margin: 0 auto 0 60px;
+}
+
+section.keep-track div.content div.content__text h3:not(:first-child) {
+  margin-top: 40px;
+}
+
+section.keep-track div.content div.content__text p {
+  margin-top: 20px;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

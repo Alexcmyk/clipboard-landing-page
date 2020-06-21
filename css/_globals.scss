@@ -13,6 +13,31 @@ body {
   color: $body-color;
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 32px;
+  color: $heading-color;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: $heading-color;
+}
+
+h1 + p,
+h2 + p {
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
 button {
   outline: none;
   padding: 17px 40px;
@@ -26,4 +51,10 @@ button {
   border-bottom: 5px solid #1c9e8a;
   box-shadow: 0px 9px 20px hsla(171, 66%, 44%, 0.5);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 3px 7px hsla(171, 66%, 44%, 0.5);
 }

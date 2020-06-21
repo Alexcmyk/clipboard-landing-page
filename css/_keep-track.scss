@@ -1,0 +1,33 @@
+section.keep-track {
+  div.text {
+    text-align: center;
+    max-width: 800px;
+    margin-top: 100px;
+  }
+
+  div.content {
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    div.content__image {
+      margin-left: -50px;
+    }
+
+    div.content__text {
+      max-width: 450px;
+      margin: 0 auto 0 60px;
+
+      h3:not(:first-child) {
+        margin-top: 40px;
+      }
+
+      p {
+        margin-top: 20px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
