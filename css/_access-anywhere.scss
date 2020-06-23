@@ -1,0 +1,21 @@
+section.access-anywhere {
+  margin: 100px auto 0 auto;
+  text-align: center;
+
+  div.text {
+    max-width: 800px;
+
+    p {
+      margin-top: 30px;
+      line-height: 1.5;
+    }
+  }
+
+  div.image {
+    img {
+      margin-top: 100px;
+      height: auto;
+      width: 900px;
+    }
+  }
+}

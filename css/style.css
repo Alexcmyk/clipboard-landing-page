@@ -172,7 +172,7 @@ section {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 38px;
   color: #4c545d;
   font-weight: 600;
 }
@@ -301,5 +301,41 @@ section.keep-track div.content div.content__text h3:not(:first-child) {
 section.keep-track div.content div.content__text p {
   margin-top: 20px;
   line-height: 1.5;
+}
+
+section.access-anywhere {
+  margin: 100px auto 0 auto;
+  text-align: center;
+}
+
+section.access-anywhere div.text {
+  max-width: 800px;
+}
+
+section.access-anywhere div.text p {
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+section.access-anywhere div.image img {
+  margin-top: 100px;
+  height: auto;
+  width: 900px;
+}
+
+section.workflow {
+  text-align: center;
+}
+
+section.workflow .text {
+  margin-top: 100px;
+}
+
+section.workflow .text p {
+  margin-top: 30px;
+}
+
+section.workflow .workflow__content {
+  margin-top: 100px;
 }
 /*# sourceMappingURL=style.css.map */
