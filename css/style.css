@@ -215,7 +215,7 @@ button:hover {
 }
 
 img.icons {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 header {
@@ -346,5 +346,30 @@ section.workflow .workflow__content {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   max-width: 1100px;
+}
+
+section.workflow .workflow__content p {
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px;
+  line-height: 1.75;
+}
+
+section.logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 95%;
+  max-width: 1100px;
+  margin: 100px auto;
 }
 /*# sourceMappingURL=style.css.map */
