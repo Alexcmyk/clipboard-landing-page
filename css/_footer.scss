@@ -1,16 +1,49 @@
 footer {
   background-color: #f5f6f8;
-  padding: 40px;
+  padding: 80px;
 
   .content {
     color: red;
     max-width: 1100px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   img {
     height: 55px;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 20px;
+
+    a {
+      color: #4c545d;
+      font-size: 15px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    a:hover {
+      color: #2d3238;
+    }
+  }
+
+  .social-links {
+    img {
+      height: 25px;
+      transition: opacity 0.3s ease-in-out;
+
+      &:not(last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    img:hover {
+      opacity: 0.8;
+    }
   }
 }
