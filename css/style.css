@@ -198,7 +198,7 @@ button {
   border-radius: 50px;
   font-size: 18px;
   font-weight: 600;
-  margin: 0 5px;
+  margin: 55px 5px;
   border-bottom: 5px solid #1c9e8a;
   -webkit-box-shadow: 0px 9px 20px rgba(38, 186, 164, 0.5);
           box-shadow: 0px 9px 20px rgba(38, 186, 164, 0.5);
@@ -371,5 +371,49 @@ section.logos {
   width: 95%;
   max-width: 1100px;
   margin: 100px auto;
+}
+
+section.cta {
+  max-width: 800px;
+  padding: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.cta h2 {
+  font-size: 38px;
+  color: #4c545d;
+  font-weight: 600;
+}
+
+section.cta button.blue {
+  background-color: #6173ff;
+  border-bottom: 5px solid #5964be;
+  -webkit-box-shadow: 0px 9px 20px rgba(97, 115, 255, 0.5);
+          box-shadow: 0px 9px 20px rgba(97, 115, 255, 0.5);
+}
+
+section.cta button.blue:hover {
+  -webkit-box-shadow: 0px 3px 7px rgba(97, 115, 255, 0.5);
+          box-shadow: 0px 3px 7px rgba(97, 115, 255, 0.5);
+}
+
+footer {
+  background-color: #f5f6f8;
+  padding: 40px;
+}
+
+footer .content {
+  color: red;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer img {
+  height: 55px;
 }
 /*# sourceMappingURL=style.css.map */
